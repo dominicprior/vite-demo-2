@@ -110,7 +110,7 @@ test('collision1', () => {
     // player.power = 5;  // i.e. from an engine
     player.radius = 0.25;
     // @ts-ignore
-    player.time = { delta: 0.02 };
+    player.utils = {time: { delta: 0.02 } };
     player.trueVelocity = new Vector3(0, 0, -0.5);  // going north
 
     const brep = new Brep;
@@ -128,5 +128,5 @@ test('collision1', () => {
 
     player.updateTrueVelocityFromBrep(brep, 0.02);
 
-    expect(player.trueVelocity.z).toBeCloseTo(acc * player.time.delta - 0.5)
+    expect(player.trueVelocity.z).toBeCloseTo(acc * player.utils.time.delta - 0.5)
 });
