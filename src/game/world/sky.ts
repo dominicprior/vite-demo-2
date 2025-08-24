@@ -16,8 +16,7 @@ import Utils from '../utils/utils.js';
 export default class Sky {
     utils: Utils;
     skyMesh: Mesh;
-    // @ts-ignore
-    seaMesh: Mesh;
+    seaMesh!: Mesh;
 
     constructor(skyScene: Scene, utils: Utils) {
         this.utils = utils;

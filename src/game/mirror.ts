@@ -13,8 +13,7 @@ export default class Mirror {
     target: WebGLRenderTarget;
     orthoScene: Scene;
     planeGeom: PlaneGeometry = new PlaneGeometry(2, 2);
-    // @ts-ignore
-    planeMesh: Mesh;
+    planeMesh!: Mesh;
 
     constructor(view: View) {
         this.view = view;

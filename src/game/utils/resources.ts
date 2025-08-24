@@ -8,8 +8,7 @@ export default class Resources {
     items: { [key: string]: any };
     toLoad: number;
     loaded: number;
-    // @ts-ignore: no initializer.
-    loaders: { [key: string]: any };
+    loaders!: { [key: string]: any };
     utils: Utils;
 
     constructor(sources: Array<{

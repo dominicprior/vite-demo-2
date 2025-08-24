@@ -14,19 +14,13 @@ import Brep from '../brep.js';
 
 export default class World {
     brep: Brep;
-    // @ts-ignore: no initializer
-    floor: Floor;
-    // @ts-ignore: no initializer
-    sky: Sky;
-    // @ts-ignore: no initializer
-    cubes: Cubes;
-    // @ts-ignore: no initializer
-    moon: Moon;
-    // @ts-ignore: no initializer
-    crosshairs: CrossHairs;
+    floor!: Floor;
+    sky!: Sky;
+    cubes!: Cubes;
+    moon!: Moon;
+    crosshairs!: CrossHairs;
     utils: Utils;
-    // @ts-ignore: no initializer
-    environment: Environment;
+    environment!: Environment;
     resources: Resources;
 
     constructor(resources: Resources, utils: Utils) {
